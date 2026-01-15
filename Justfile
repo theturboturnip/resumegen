@@ -24,14 +24,6 @@ setup-js:
     mkdir -p ./output/
     mkdir -p ./output/PRIVATE
 
-render-js-main name="current":
-    uv run python ./buildcv.py -o {{output_resume_json}} resume.toml configs.toml
-
-    npx resume-cli export {{cv_pdf}} -r {{output_resume_json}}/resume.{{name}}.json -t ./jsonresume-theme-turnipcaffeine
-    npx resume-cli export {{cv_html}} -r {{output_resume_json}}/resume.{{name}}.json -t ./jsonresume-theme-turnipcaffeine
-
-    uv run python ./rendermarkdown.py --include_basics {{output_resume_json}}/resume.current.json {{cv_md}}
-
 render-js name="current":
     uv run python ./buildcv.py -o {{output_resume_json}} resume.toml configs.toml
 
