@@ -594,6 +594,12 @@ highlights = [
     "Ported Unity-based code and shaders to C++, GLSL and Metal",
     "Supported development of AR racing game (Lightstream Racer) in Unity/C#"
 ]
+#3D game engine development for a VR/AR mobile games startup.
+# Worked alongside two senior engineers to build a multiplatform engine using Vulkan/GLSL for Android+PC development and Metal for iOS, including a multiplatform shader system.
+# Interfaced with technical artists to port shaders into this system for various demos and benchmarks.
+# Led implementation of the physically-based rendering system with image-based lighting.
+# Onboarded multiple other junior programmers.
+# Developed C++/objective-C gameplay logic in demos and assisted with Unity/C# game development.
 
 [work.gapyear]
 name = "Virtual Arts Ltd"
